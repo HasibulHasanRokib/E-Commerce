@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Cart from './Components/Cart/Cart'
 import Wish from './Components/WishList/Wish'
 import MobileNav from './Components/Navbar/MobileNav'
+import SidebarMobile from './Components/Sidebar/SidebarMobile'
 
 
 
@@ -18,6 +19,7 @@ const App = () => {
     <BrowserRouter>
     <Navbar/>
      <Sidebar/>
+     <SidebarMobile/>
      <Cart/>
      <Wish/>
       <Routes>

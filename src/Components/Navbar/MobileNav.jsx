@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 const MobileNav = () => {
 
-  const{cartShow,setCartShow,cartItems,wishShow,setWishShow,wishItems }=useContext(ProductsContext)
+  const{categoryShow,setCategoryShow,cartShow,setCartShow,cartItems,wishShow,setWishShow,wishItems }=useContext(ProductsContext)
 
   const navigate=useNavigate()
 
@@ -23,7 +23,7 @@ const MobileNav = () => {
           <button onClick={()=>setWishShow(!wishShow)}  className='flex items-center'><i className="fa-solid fa-heart text-2xl"></i><span>({wishItems.length})</span></button>
           </li>
           <li>
-          <button><i className="fa-solid fa-bars text-2xl"></i></button>
+          <button onClick={()=>setCategoryShow(!categoryShow)}><i className="fa-solid fa-bars text-2xl"></i></button>
         </li>
       </ul>
      </div>

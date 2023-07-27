@@ -13,8 +13,35 @@
     margin-top: 2rem;
     margin-bottom: 5rem;
 }
+#sidebarMobile{
+    display: none;
+}
 @media only screen and (max-width:500px){
 #sidebar{
-    display: none;
+    display: none;  
+}
+.sidebarMobile{
+    display: block;
+    top: 81px;
+    width: 61%;
+    padding: 1rem 3rem;
+    height: 87%;
+    z-index: 999;
+    position: fixed;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    overflow-y: scroll;
+    margin-bottom: 2rem;
+    background-color: white ;
+    transform: translate(-100%,0%);
+    /* transform: translate(0%,0%); */
+    transition: all .5s ease-in-out;
+  }
+  .sidebarMobile--open{
+    transform: translate(0%,0%);
+  
+  }
+
+.x-mark{
+margin-left:10rem;
 }
 }

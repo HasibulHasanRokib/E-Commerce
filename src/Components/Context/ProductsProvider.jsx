@@ -65,9 +65,10 @@ const ProductsProvider=({children})=>{
 
   const[cartShow,setCartShow]=useState(false)
   const[wishShow,setWishShow]=useState(false)
+  const[categoryShow,setCategoryShow]=useState(false)
 
 
-    return <ProductsContext.Provider value={{filteredProducts,sortingOrder, setPriceRangeFilter,setCategoryFilter,setSortingOrder,setCompanyFilter,setSearchFilter,addToCart,cartItems,setCartItems,wishItems,setWishItems,addToWish,cartShow,setCartShow,setWishShow,wishShow}}>
+    return <ProductsContext.Provider value={{filteredProducts,sortingOrder, setPriceRangeFilter,setCategoryFilter,setSortingOrder,setCompanyFilter,setSearchFilter,addToCart,cartItems,setCartItems,wishItems,setWishItems,addToWish,cartShow,setCartShow,setWishShow,wishShow,categoryShow,setCategoryShow}}>
     {children}
     </ProductsContext.Provider>
 }
