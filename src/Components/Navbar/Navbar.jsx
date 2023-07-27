@@ -11,7 +11,7 @@ const Navbar = () => {
   const{setSearchFilter,setCartShow,cartShow,setWishShow,wishShow,cartItems,wishItems}=useContext(ProductsContext)
 
   return (
-    <div className="app">
+    <div>
       <nav className="navbar">
         <div className="logo">
         <img className="w-24" src="/src/assets/daraz.png" alt="" />

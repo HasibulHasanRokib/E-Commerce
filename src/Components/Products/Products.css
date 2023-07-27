@@ -147,7 +147,14 @@ transform: translate(190%,80%);
 }
 
 @media only screen and (max-width:500px){
+.message-section{
+    transform: translate(10%,-50%);
 
+}
+.message-section--open{
+    transform: translate(10%,150%);
+
+    }
 #products{
     margin:3rem 0;
 }

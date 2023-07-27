@@ -31,6 +31,7 @@ const ProductsDetails = () => {
 
   return (
     <div id="productsDetails">
+
       {message && <Message message={message}/>}
 
       <div className="productDetails-section flex justify-between items-start">
