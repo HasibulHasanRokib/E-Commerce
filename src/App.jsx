@@ -19,13 +19,13 @@ const App = () => {
     <BrowserRouter>
     <Navbar/>
      <Sidebar/>
-     <SidebarMobile/>
      <Cart/>
      <Wish/>
       <Routes>
         <Route path='/' element={<Products/>}/>
         <Route path='/:title' element={<ProductsDetails/>}/>
       </Routes>
+     <SidebarMobile/>
       <MobileNav/>
     </BrowserRouter> 
     </>

@@ -1,8 +1,9 @@
 import { useLocation} from "react-router-dom";
 import { AiFillStar, AiFillHeart } from "react-icons/ai";
 import { BsFillCartCheckFill } from "react-icons/bs";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import ProductsContext from "../Context/ProductsContext";
+import Message from "./Message";
 
 const ProductsDetails = () => {
   const { addToCart, addToWish } = useContext(ProductsContext);
@@ -16,11 +17,22 @@ const ProductsDetails = () => {
     location.state.thumbnail
   );
 
-  const [count,setCount]=useState(1)
+  const [count,setCount]=useState(1);
+
+  const [message,setMessage]=useState(false)
+  
+  
+  useEffect(()=>{
+    setTimeout(() => {
+      setMessage(false)
+    }, 2000);
+  })
 
 
   return (
     <div id="productsDetails">
+      {message && <Message message={message}/>}
+
       <div className="productDetails-section flex justify-between items-start">
         <section>
           <div className="product-img">
@@ -72,7 +84,10 @@ const ProductsDetails = () => {
 
           <div className="flex">
             <button
-              onClick={() => addToCart({ id, title, thumbnail, price,discountPercentage,count })}
+              onClick={() =>{ addToCart({ id, title, thumbnail, price,discountPercentage,count })
+              setMessage(true)}
+              }
+             
               className="add-cart flex items-center"
             >
               <BsFillCartCheckFill className="inline-block mr-2" />
