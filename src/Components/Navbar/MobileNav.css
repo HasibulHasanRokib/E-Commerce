@@ -1,0 +1,27 @@
+.mobile-nav{
+
+
+}
+.mobile-nav-items{
+   display: none; 
+}
+@media only screen and (max-width:500px){
+
+    .mobile-nav{
+        background-color: white;
+        height: 5rem;
+        padding: 0.3rem;
+        position: fixed;
+        top: 38.3rem;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+    }
+    .mobile-nav-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        margin-top: 0.5rem;
+    }
+}
