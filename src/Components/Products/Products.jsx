@@ -14,7 +14,7 @@ const Products = () => {
   return (
     <>
     <div id="products">
-      <div className="products-header flex  justify-between md:items-center items-end my-5">
+      <div className="products-header">
         <Company />
         <div>
           <Sort />
@@ -58,12 +58,12 @@ const Products = () => {
                 <img src={item.thumbnail} alt={item.brand} />
               </div>
               <div className="card-body">
-                <div className="flex flex-col gap-0">
+                <div className="flex flex-col justify-end gap-0">
                   <samp className="font-sans font-bold capitalize">
-                    {item.title.slice(0, 15)}
+                    {item.title.slice(0, 20)}
                   </samp>
                   <samp>
-                    <AiFillStar className="inline-block text-orange-400" />
+                    <AiFillStar className="inline-block  text-orange-400" />
                     {item.rating}
                   </samp>
                   <samp className="text-sm font-bold text-gray-400 font-sans">
@@ -83,10 +83,10 @@ const Products = () => {
                 </div>
               </div>
 
-              <button className="w-full text-white p-1 font-bold buy-btn">
+              {/* <button className="w-full text-white p-1 font-bold buy-btn">
                 <BsCartPlus className="inline-block mx-1" />
                 Buy Now
-              </button>
+              </button> */}
             </Link>
           </>
 

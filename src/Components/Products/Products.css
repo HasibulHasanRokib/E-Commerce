@@ -1,8 +1,18 @@
 #products{
     padding: 1rem;
     margin-left: 16.3rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
     background-color: #e4e4e7;
+}
+.products-header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    padding:1rem;
+    border-radius: 2px;
+    width: 99%;
 }
 .products-card-section{
     display: grid;
@@ -41,34 +51,41 @@ padding: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;  
-   background-color: #34495E;
+   background-color: var(--blue);
 
 
 }
 
-#company{
-    margin: 1rem 0;
-}
+
 .company-section{
     display: flex;
     gap: 1rem;
 }
-.company-img{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-}
-.company-body{
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap:1rem;
-    background-color: #fff;
+
+
+.company-btn{
+    text-transform: capitalize;
+    box-shadow: rgba(0, 0, 0, 0.01) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     padding: 0.3rem;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
+.company-btn:hover{
+background-color:var(--blue);
+color: white;
+}
+.sorting{
+    background-color: var(--blue);
+    box-shadow: var(--box-shadow);
+    color: white;
+    padding: 0.4rem;
+    font-size: .8rem;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 2.4rem;
+    outline: none;
+
+}
+
+
 #productsDetails{
     background-color:white;
     width: 100%;
@@ -156,16 +173,20 @@ transform: translate(190%,80%);
 
     }
 #products{
-    margin:3rem 0;
+    margin:8rem 0;
 }
 .company-section{
     flex-wrap: wrap;
+    margin-bottom: 1rem;
 }
 .products-card-section{
     grid-template-columns: auto auto;
 }
 .products-header{
     flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    width: 100%;
 }
 .card{
     width: 174px;

@@ -13,8 +13,8 @@ setSortingOrder(sortingOrder === 'ascending' ? 'descending' : 'ascending');
 
   return (
     <div>
-          <select name="sorting" onChange={handleSortToggle}>
-          <option value={sortingOrder==='descending'}>Low-High</option>
+          <select className="sorting" name="sorting" onChange={handleSortToggle}>
+          <option  value={sortingOrder==='descending'}>Low-High</option>
           <option value={sortingOrder==='ascending'}>High-Low</option>
         </select>
     </div>

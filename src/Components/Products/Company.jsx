@@ -10,6 +10,7 @@ import Oppo from '/src/assets/Oppo.png'
 import Hp from '/src/assets/hp.png'
 import Infinix from '/src/assets/infinix.jpg'
 import Microsoft from '/src/assets/microsoft.avif'
+import { Link } from "react-router-dom"
 
 
 const Company = () => {
@@ -31,7 +32,7 @@ const companyData=[
     <div className="company-section">
       {companyData.map((item,index)=>{
         return <div className="company-body" key={index}>
-            <button onClick={(e)=>{setCompanyFilter(e.target.value)}} value={item.name} className="font-sans text-sm font-bold capitalize">{item.name}</button>
+            <button className="company-btn" onClick={(e)=>{setCompanyFilter(e.target.value)}} value={item.name}>{item.name}</button>
         </div>
       })}
       </div>

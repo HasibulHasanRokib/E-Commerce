@@ -1,7 +1,4 @@
-.mobile-nav{
 
-
-}
 .mobile-nav-items{
    display: none; 
 }
@@ -12,10 +9,11 @@
         height: 5rem;
         padding: 0.3rem;
         position: fixed;
-        top: 41.6rem;
+        top: 43.6rem;
         width: 100%;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         border-top: 1px solid black ;
+        display: block;
     
     }
     .mobile-nav-items{
