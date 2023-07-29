@@ -1,0 +1,42 @@
+.signUp{
+    margin-top: 5rem;
+    width: 83%;
+    margin-left: 16.3rem;
+    height: 20rem;
+    background-image: url(https://skybuybd.com/_next/static/media/login_bg_2.770c5adb.svg);
+    /* background-position:center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.signUp-img{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signUp-img img{
+    position: absolute;
+    top: 5rem;
+}
+
+.phn-input{
+    width: 18rem;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    padding: 0.5rem 1rem;
+    margin: 0.4rem 0;
+    outline: none;
+}
+.submit-btn{
+    background-color: var(--blue);
+    color: white;
+    width: 18rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+@media only screen and (max-width:500px){
+    .signUp-img{
+        width: 10rem;
+        margin: 0 auto;
+    }
+}

@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Cart from './Components/Cart/Cart'
 import Wish from './Components/WishList/Wish'
 import MobileNav from './Components/Navbar/MobileNav'
+import SignUp from './Components/SignUp/SignUp'
 
 
 
@@ -22,6 +23,7 @@ const App = () => {
      <Wish/>
       <Routes>
         <Route path='/' element={<Products/>}/>
+        <Route path='signUp' element={<SignUp/>}/>
         <Route path='/:title' element={<ProductsDetails/>}/>
       </Routes>
       <MobileNav/>

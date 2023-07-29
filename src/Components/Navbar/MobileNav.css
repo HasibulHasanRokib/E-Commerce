@@ -9,7 +9,7 @@
         height: 5rem;
         padding: 0.3rem;
         position: fixed;
-        top: 43.6rem;
+        top: 43rem;
         width: 100%;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         border-top: 1px solid black ;
@@ -20,7 +20,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 4rem;
+        gap: 2rem;
         margin-top: 1rem;
+    }
+    .home-btn{
+        background-color: var(--blue);
+        padding: 0.5rem 0.2rem;
+        color: white;
+        border-radius: 50%;
+        height: 3rem;
+        width: 3rem;
     }
 }
