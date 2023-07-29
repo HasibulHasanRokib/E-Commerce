@@ -9,9 +9,9 @@ const SignUp = () => {
       </section>
 
         <div className='signUp-img'>
-            <img className='mt-16' src="https://skybuybd.com/_next/static/media/login_icon.849dedcc.svg" alt="" />
+            <img src="https://skybuybd.com/_next/static/media/login_icon.849dedcc.svg" alt="" />
         </div>
-        <form className='flex flex-col justify-center items-center mt-16  p-5'>
+        <form className='flex flex-col justify-center items-center md:mt-15 md:p-5'>
         <h2>এখানে আপনার মোবাইল নাম্বার দিয়ে লগিন করুন</h2>
         <span className='flex flex-col justify-center items-start my-10'>
         <label>মোবাইল নাম্বার</label>

@@ -34,9 +34,16 @@
     padding: 0.5rem;
     border-radius: 5px;
 }
-@media only screen and (max-width:500px){
-    .signUp-img{
-        width: 10rem;
-        margin: 0 auto;
+@media only screen and (max-width:768px){
+    .signUp-img img{
+        width: 15rem;
+        height: 8rem;
+        margin: 7rem auto;
+    }
+    .signUp{
+        width: 0%;
+    }
+    form{
+        margin-top: -5rem;
     }
 }

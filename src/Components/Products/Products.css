@@ -12,15 +12,15 @@
     margin: 1rem 0;
     padding:1rem;
     border-radius: 2px;
-    width: 99%;
+    width: 100%;
 }
 .products-card-section{
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    gap: 1rem;
+    grid-template-columns:repeat(5,1fr);
+     gap: 1rem;
 }
 .card{
-width: 225px;
+width: 234px;
 height: 273px;
 box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 cursor: pointer;
@@ -38,7 +38,7 @@ background-color: white;
     margin: 0 10.5rem;
 }
 .card-img img{
-width:224px ;
+width:234px ;
 height: 154px;
 }
 .card-body{
@@ -163,7 +163,8 @@ color: white;
 transform: translate(190%,80%);
 }
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:768px){
+
 .message-section{
     transform: translate(10%,-50%);
 
@@ -174,13 +175,17 @@ transform: translate(190%,80%);
     }
 #products{
     margin:8rem 0;
+    padding: 0;
 }
 .company-section{
     flex-wrap: wrap;
     margin-bottom: 1rem;
 }
 .products-card-section{
-    grid-template-columns: auto auto;
+   
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.5rem;
+    padding: 0.5rem;
 }
 .products-header{
     flex-direction: column;
@@ -189,16 +194,16 @@ transform: translate(190%,80%);
     width: 100%;
 }
 .card{
-    width: 174px;
+    width: 185px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .dis-btn{
-    margin: 0 7.3rem;
+    margin: 0 7.9rem;
 }
 .card-img img{
-    width:174px ;
+    width:184px ;
     height: 134px;
     }
     #productsDetails{
