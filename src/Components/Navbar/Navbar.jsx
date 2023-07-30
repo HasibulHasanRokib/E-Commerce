@@ -22,6 +22,7 @@ const Navbar = () => {
         <div className="">
           <input
             onChange={(e) => setSearchFilter(e.target.value)}
+            onClick={()=>navigate('/products')}
             className="search-bar"
             placeholder="Search for anything..."
             type="search"

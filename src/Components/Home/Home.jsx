@@ -54,7 +54,7 @@ const Home = () => {
   
 
       const [trending,setTrending]=useState([])
-      let url="https://dummyjson.com/products?limit=10&skip=30"
+      let url="https://dummyjson.com/products?limit=10&skip=40"
 
       const trendingData=async()=>{
         try {
