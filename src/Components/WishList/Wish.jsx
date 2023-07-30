@@ -7,7 +7,7 @@ import Empty from '/src/assets/empty-cart.png'
 import '/src/Components/Cart/Cart.css'
 
 const Wish = () => {
-const{wishItems,setWishItems,wishShow,setWishShow,addToCart}=useContext(ProductsContext)
+const{wishItems,setWishItems,wishShow,setWishShow,addToCart,count}=useContext(ProductsContext)
 
 const handleWishRemove=(id)=>{
     const newWish=wishItems.filter((item)=>item.id !== id);
@@ -30,7 +30,7 @@ const handleWishRemove=(id)=>{
          </div>
         )}
         {wishItems.map((item)=>{
-          const{id,title,thumbnail,price}=item;
+          const{id,title,thumbnail,price,discountPercentage}=item;
           return <section key={item.id} className='cart-body'>
         
          <div>
@@ -39,7 +39,7 @@ const handleWishRemove=(id)=>{
          <div className='cart-text'>
           <h4 className='text-lg font-bold mb-1'>{item.title.slice(0,10)}</h4>
           <h5 className='font-bold mb-1'>${item.price}</h5>
-         <button onClick={()=>addToCart({id,title,price,thumbnail})} className="font-bold border-2 px-2 py-1 bg-red-800 text-white">Add to Cart</button>
+         <button onClick={()=>addToCart({id,title,price,thumbnail,discountPercentage,count})} className="font-bold border-2 px-2 py-1 bg-red-800 text-white">Add to Cart</button>
          </div>
          <FaXmark className='remove-btn' onClick={() => handleWishRemove(item.id)}/>
         </section>

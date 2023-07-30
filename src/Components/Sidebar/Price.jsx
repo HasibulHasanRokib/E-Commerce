@@ -1,8 +1,9 @@
 import { useContext } from "react"
 import ProductsContext from "../Context/ProductsContext"
+import { useNavigate } from "react-router-dom";
 
 const Price = () => {
-
+const navigate=useNavigate()
 const {setPriceRangeFilter}=useContext(ProductsContext);
 
 const priceRangeOptions=[
@@ -24,7 +25,9 @@ const priceRangeOptions=[
      <div className="price-section flex flex-col">
      {priceRangeOptions.map((item,index)=>{
         return <span key={index}>
-         <input type="radio" className="cursor-pointer" name="price" onClick={(e)=>{setPriceRangeFilter(e.target.value)}} value={item.value} />
+         <input type="radio" className="cursor-pointer" name="price" onClick={(e)=>{setPriceRangeFilter(e.target.value)
+         navigate("products")
+         }} value={item.value} />
          <label className="text-sm ml-2">{item.label}</label>
         </span>
       })}

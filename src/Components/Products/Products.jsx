@@ -1,5 +1,4 @@
 import "./Products.css";
-import { BsCartPlus } from "react-icons/bs";
 import { AiFillStar } from "react-icons/ai";
 import { useContext } from "react";
 import ProductsContext from "../Context/ProductsContext";
@@ -37,7 +36,7 @@ const Products = () => {
           return (
             <>
             <Link
-              to={"title"}
+              to={title}
               state={{
                 id,
                 title,
@@ -83,10 +82,7 @@ const Products = () => {
                 </div>
               </div>
 
-              {/* <button className="w-full text-white p-1 font-bold buy-btn">
-                <BsCartPlus className="inline-block mx-1" />
-                Buy Now
-              </button> */}
+           
             </Link>
           </>
 

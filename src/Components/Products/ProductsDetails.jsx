@@ -1,4 +1,4 @@
-import { useLocation} from "react-router-dom";
+import { useLocation, useParams} from "react-router-dom";
 import { AiFillStar, AiFillHeart } from "react-icons/ai";
 import { BsFillCartCheckFill } from "react-icons/bs";
 import { useContext, useEffect, useState } from "react";
@@ -6,10 +6,12 @@ import ProductsContext from "../Context/ProductsContext";
 import Message from "./Message";
 
 const ProductsDetails = () => {
-  const { addToCart, addToWish } = useContext(ProductsContext);
-
+  const { addToCart, addToWish,count,setCount } = useContext(ProductsContext);
+  
+  const{title}=useParams()
+  
   const location = useLocation();
-  const { thumbnail, price, id, title,discountPercentage } = location.state;
+  const { thumbnail, price, id,discountPercentage } = location.state;
 
   const [imagesMore, setImagesMore] = useState(location.state.images);
 
@@ -17,7 +19,6 @@ const ProductsDetails = () => {
     location.state.thumbnail
   );
 
-  const [count,setCount]=useState(1);
 
   const [message,setMessage]=useState(false)
   
@@ -95,7 +96,7 @@ const ProductsDetails = () => {
               Add Cart
             </button>
             <button
-              onClick={() => addToWish({ id, title, thumbnail, price })}
+              onClick={() => addToWish({ id, title, thumbnail, price,discountPercentage })}
               className="add-wish flex items-center"
             >
               <AiFillHeart className="inline-block mr-2" />

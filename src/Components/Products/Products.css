@@ -88,19 +88,16 @@ color: white;
 
 #productsDetails{
     background-color:white;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    padding: 1rem;
-    margin-top: 2rem;
+    padding-top: 1rem;
+    margin-left: 16.3rem;
+    margin-top: 4.5rem;
+
 
 
 }
 .productDetails-section{
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    padding: 6rem 1rem;
-    width: 80%;
-    margin:auto;
+  
+    padding: 5rem 1rem;
 }
 .productDetail-body{
     display: flex;
@@ -200,16 +197,17 @@ transform: translate(190%,80%);
     justify-content: space-between;
 }
 .dis-btn{
-    margin: 0 7.9rem;
+    margin: 0 7.3rem;
 }
 .card-img img{
     width:184px ;
     height: 134px;
     }
     #productsDetails{
-        padding: 0;
+        padding: 3rem 0;
         height: auto;
         position: relative;
+        margin: 0;
     }
     .productDetails-section{
         margin: 0;
